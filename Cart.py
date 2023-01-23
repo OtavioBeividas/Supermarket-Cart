@@ -43,9 +43,8 @@ def dairyProducts():
     updateList(dairyItems[product - 1], dairyPrice[product - 1])
 
 
-
 # menu congelados // frozen menu
-def frozenFoods():
+def frozenFood():
     i = 0
     frozenSize = len(frozenFoods)
     while i < frozenSize:
@@ -64,7 +63,7 @@ def updateList(name, price):
     print('\nProduct added to cart successfully!')
     print(f'\nProduct: {name} - Price: {price}')
 
-    
+
 # checar carrinho // check cart
 def viewCart():
     i = 0
@@ -75,7 +74,7 @@ def viewCart():
 
 
 while True:
-    opcao = int(input(
+    option = int(input(
         "\n\n\t========= Welcome to the SuperMarket ======"
         "\n\t\t1 - Products \t\t\t"
         "\n\t\t2 - View Cart \t\t"
@@ -98,7 +97,7 @@ while True:
                     case 2:
                         dairyProducts()
                     case 3:
-                        frozenFoods()
+                        frozenFood()
                     case _:
                         print('Enter a valid choice')
             case 2:
